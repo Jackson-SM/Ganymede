@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ganymede", "Ganymede\Ganymede.csproj", "{695E02CC-B0E3-49F1-935F-C1CE775DEECE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{695E02CC-B0E3-49F1-935F-C1CE775DEECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695E02CC-B0E3-49F1-935F-C1CE775DEECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695E02CC-B0E3-49F1-935F-C1CE775DEECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695E02CC-B0E3-49F1-935F-C1CE775DEECE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB2BC795-B2A9-415F-9678-7FEDCEE911A1}
+	EndGlobalSection
+EndGlobal
