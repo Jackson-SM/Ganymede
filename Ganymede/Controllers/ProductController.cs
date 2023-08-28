@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Ganymede.Entities;
+using Ganymede.Repositories.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Ganymede.Controllers
 {
@@ -6,9 +8,23 @@ namespace Ganymede.Controllers
     [Route("products")]
     public class ProductController : Controller
     {
-        public IActionResult Index()
+        private readonly IProductRepository _productRepository;
+
+        public ProductController(IProductRepository productRepository)
         {
-            return View();
+            _productRepository = productRepository;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<Product>>> GetProducts()
+        {
+            return await _productRepository.GetProducts();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Product>> GetProductById(Guid id)
+        {
+            return await _productRepository.GetProductById(id);
         }
     }
 }
